@@ -197,7 +197,7 @@ body {
     .other-details__content .wind, .other-details__content .pressure, .other-details__content .hu-value {
       font-size: 18px; } }
 
-@media only screen and (max-width: 360.98px) {
+@media only screen and (max-width: 410.98px) {
   .other-details__content {
     flex-direction: column; }
     .other-details__content .pressure-content {
