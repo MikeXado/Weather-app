@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    
+     <main>
+          <div class="weather-container">
+
+            <div class="weather-content">
+                <div class="weather-top__text">
+                    <h2  class="title">Weather App</h2>
+                </div>
+                <div class="location-input">
+                    <input type="text" id="locationIn" value="Chisinau"  placeholder = "City , State" onfocus = "this.placeholder = ''"  onblur = "this.placeholder = 'City , State'">
+                </div>
+               
+                <div class="weather-info__container">
+                    <div class="weather-info__content">
+                        <div class="city-name">
+                            <span class="city"></span>
+                        </div>
+                        <div class="temperature">
+                            
+                            <span class="grades">
+                              <div class="weather-img"></div>
+                                <span class="temp"></span>
+                                <span class= "celsius"><sup>o</sup><span class="c">C</span> </span>
+                          
+                            </span>
+                        </div>
+                        <div class="summary">
+                            <span class="summary-text"></span>
+                        </div>
+                        <div class="other-details">
+                            <div class="other-details__content">
+                                <div class="horizontal-line"></div>
+                            <div class="humidity">
+                                <div class="humidity-value">
+                                    <span class="hu-value"></span>
+                                </div>
+                                <div class="humidity-title">Humidity</div>
+                            </div>
+                             <div class="horizontal-line"></div>
+                            <div class="pressure-content">
+                                <div class="pressure-value">
+                                    <span class="pressure"></span>
+                                </div>
+                                <div class="pressure-title">Pressure</div>
+                            </div>
+                            <div class="horizontal-line"></div>
+                            <div class="wind-content">
+                                <div class="wind-value">
+                                    <span class="wind"></span>
+                                </div>
+                                <div class="wind-title">Wind</div>
+                            </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+             
+
+        </div>
+     </main>
+    <script src="script.js"></script>
+</body>
+</html>
