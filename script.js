@@ -52,6 +52,7 @@ document.addEventListener("keyup", (e) => {
     document.querySelector(".learn-more").classList.add("hov");
     document.querySelector(".learn-more").focus();
     setTimeout(() => {
+      document.querySelector(".learn-more").classList.remove("hov");
       getApi();
     }, 1000);
   }
