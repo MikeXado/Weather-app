@@ -158,7 +158,7 @@ function getExchangeRate(){
 
 
 //!CLOSE BUTTON 
-  document.querySelector(".close").addEventListener("click" , ()=> {
+  document.querySelector(".close-button").addEventListener("click" , ()=> {
           document.querySelector(".converter__content").classList.add("converter-close");
   })
 
