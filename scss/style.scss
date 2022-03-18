@@ -29,7 +29,7 @@ body {
     background-position: center;
     animation: gradient 15s ease infinite;
     font-family: 'Comfortaa', cursive;
-    height: 100vh;
+    
     color: #fff;
 }
 
@@ -50,7 +50,7 @@ body {
 
 
 main {
-    padding: 15px;
+    padding: 10px;
 }
 
 
@@ -114,6 +114,8 @@ main {
         -webkit-filter: hue-rotate(-360deg);
     }
 }
+
+
 
 .location-input {
     margin-top: 100px;
@@ -405,10 +407,10 @@ button {
 
 
 
-@media only screen and (max-width: 424px) {
+@media only screen and (max-width: 427px) {
     .weather-top__text {
         h2 {
-            font-size: 40px;
+            font-size: 30px;
         }
 
 
@@ -424,11 +426,19 @@ button {
             font-size: 18px;
         }
     }
+
+    .location-input {
+        margin-top: 50px;
+    }
+    
 }
 
 
 @media only screen and (max-width: 410.98px) {
 
+   
+    
+    
     .other-details__content {
         flex-direction: column;
 
@@ -462,6 +472,9 @@ button {
 
 
 
+
+
+
 /* for custom scrollbar for webkit browser*/
 
 ::-webkit-scrollbar {
@@ -482,5 +495,200 @@ button {
     height: 500px; 
     border-radius: 30px;
 }
+
+
+
+
+.converter__container {
+   padding: 0 15px 0 0px;
+   position: fixed;
+   z-index: 10;
+
+}
+
+
+.converter__button {
+    cursor: pointer;
+     margin-top: 5px;
+     max-width: 100%;
+     i {
+         font-size: 30px;
+     }
+
+    
+    
+}
+
+.converter-close {
+    transform: translateX(-100%);
+}
+
+.converter__content {
+   
+    transition: all .5s ease;
+    margin-top: 20px;
+    position: relative;
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;  
+    color: #000;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0px 4px 21px 16px rgba(34, 60, 80, 0.2);
+
+
+    
+    .amount{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+
+
+
+        input {
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
+            border: 0;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+            padding: 5px;
+            font-size: 17px;
+            margin-top: 10px;
+        }
+
+        
+        
+    }
+    
+
+
+    .currency {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .drop-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+
+
+        .select-box {
+
+            margin: 0 10px 0 10px;
+             img {
+                 width: 40px;
+             }
+
+        }
+
+        i {
+            font-size: 25px;
+        }
+
+
+        select {
+            height: 30px;
+            border-radius: 30px;
+            background-color: #fff;
+            border: 0;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+        
+    }
+
+
+         .close-button {
+             cursor: pointer;
+         }
+
+
+        .close::before , .close::after{
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 15px;
+            background-color: #000;
+            right: 20px;
+            top: 20px;
+        }
+
+
+        .close::after {
+            transform: rotate(-45deg);
+        }
+
+        .close:before {
+            transform: rotate(45deg);
+        }
+
+    .exchange-rate {
+
+       
+        input {
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
+            border: 0;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+            padding: 5px;
+            font-size: 17px;
+            margin-top: 15px;
+        } 
+    }
+
+
+
+}
+
+
+
+.button-52 {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    z-index: 1;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 15px;
+  }
+
+  
+  .button-52:after {
+    content: "";
+     background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .button-52:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
+  @media (min-width: 768px) {
+    .button-52 {
+      padding: 13px 50px 13px;
+    }
+  }
 
 

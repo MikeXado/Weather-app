@@ -15,6 +15,8 @@
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
+
+   <script src="https://kit.fontawesome.com/0c8fb3eda5.js" crossorigin="anonymous"></script>
   
   <title>Weather App</title>
 </head>
@@ -23,7 +25,44 @@
 
   <main>
     <div class="weather-container">
+         <div class="converter__container">
+               <div class="converter__button">
+                <i class="fa solid fa-landmark"></i>
+            <div class="converter__content converter-close">
+                  <div class="close-button"><span class="close"></span></div>
+                <div class="currency">
+                  <form action="#">
+  
+                    <div class="amount">
+                      <p>Enter Amount</p>
+                      <input type="text" value="1">
+                    </div>
 
+    
+                    <div class="drop-list">
+                      <div class="from">
+                        <p>From</p>
+                        <div class="select-box">
+                          <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+                          <select> <!-- Options tag are inserted from JavaScript --> </select>
+                        </div>
+                      </div>
+                      <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                      <div class="to">
+                        <p>To</p>
+                        <div class="select-box">
+                          <img src="https://flagcdn.com/48x36/md.png" alt="flag">
+                          <select> <!-- Options tag are inserted from JavaScript --> </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="exchange-rate"><input type="text" id="converted"></div>
+                  </form>
+                  <button class="button-52" role="button">Convert</button>
+                  </div>
+              </div>
+            </div>
+         </div>
       <div class="weather-content">
         <div class="weather-top__text">
           <h2 class="title">Weather App</h2>
@@ -94,6 +133,7 @@
 
   </main>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="country-list.js"></script>
   <script src="script.js"></script>
 </body>
 
