@@ -509,7 +509,6 @@ button.learn-more:active::before {
 .converter__button {
   cursor: pointer;
   margin-top: 5px;
-  max-width: 100%;
 }
 
 .converter__button i {
@@ -519,11 +518,11 @@ button.learn-more:active::before {
 .converter-close {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .converter__content {
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
   margin-top: 20px;
   position: relative;
   max-width: 100%;
