@@ -159,14 +159,14 @@ function getExchangeRate(){
 
 //!CLOSE BUTTON 
   document.querySelector(".close-button").addEventListener("click" , ()=> {
-          document.querySelector(".converter__content").classList.add("converter-close");
+          document.querySelector(".converter__container").classList.add("converter-close");
   })
 
 
   //!CONVERTER CLOSE 
 
   document.querySelector(".converter__button").addEventListener("click" , ()=> {
-    document.querySelector(".converter__content").classList.toggle("converter-close")
+    document.querySelector(".converter__container").classList.toggle("converter-close")
   })
 
 
