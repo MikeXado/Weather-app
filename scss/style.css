@@ -52,23 +52,6 @@ main {
   right: 20px;
 }
 
-.background-switcher {
-  border: 1px solid #33adff;
-  padding: 15px;
-  border-radius: 30px;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
-.background-switcher h1 {
-  font-size: 16px;
-}
-
-.background-switcher:hover {
-  background-color: #33adff;
-  color: #fff;
-}
-
 .weather-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,7 +73,7 @@ main {
   margin-top: 30px;
 }
 
-.weather-top__text h2 {
+.weather-top__text h1 {
   font-size: 55px;
 }
 
