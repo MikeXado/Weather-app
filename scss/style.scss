@@ -29,7 +29,6 @@ body {
     background-position: center;
     animation: gradient 15s ease infinite;
     font-family: 'Comfortaa', cursive;
-    
     color: #fff;
 }
 
@@ -98,9 +97,11 @@ main {
 
 .title {
     color: #f35626;
-    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-    background-clip: text;
+    background-image:  linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: hue 10s infinite linear;
+    
 
 }
 
